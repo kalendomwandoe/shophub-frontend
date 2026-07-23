@@ -13,7 +13,7 @@ import MyBoutique from "./pages/owner/MyBoutique.tsx";
 import MyProducts from "./pages/owner/MyProducts.tsx";
 import AddProduct from "./pages/owner/AddProduct.tsx";
 import EditProduct from "./pages/owner/EditProduct.tsx";
-import Categories from "./pages/Categories";
+import Categories from "./pages/Categories.tsx";
 import CategoryProducts from "./pages/CategoryProducts";
 
 const router = createBrowserRouter([
