@@ -1,0 +1,57 @@
+@reference "tailwindcss";
+
+.container {
+  @apply max-w-5xl mx-auto px-6 py-10;
+}
+
+.grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-10;
+}
+
+.imageWrapper {
+  @apply aspect-square bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center;
+}
+
+.image {
+  @apply w-full h-full object-cover;
+}
+
+.noImage {
+  @apply text-gray-400 text-sm;
+}
+
+.details {
+  @apply flex flex-col gap-3;
+}
+
+.shopLink {
+  @apply text-sm text-blue-600 font-medium hover:underline w-fit;
+}
+
+.name {
+  @apply text-2xl font-bold text-gray-800;
+}
+
+.price {
+  @apply text-xl font-semibold text-gray-900;
+}
+
+.description {
+  @apply text-gray-600 leading-relaxed;
+}
+
+.stock {
+  @apply text-sm text-gray-500;
+}
+
+.contactBtn {
+  @apply mt-4 inline-block w-fit bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors;
+}
+
+.status {
+  @apply text-center text-gray-500 py-16;
+}
+
+.backLink {
+  @apply inline-block mt-10 text-blue-600 hover:underline;
+}

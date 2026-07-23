@@ -1,0 +1,49 @@
+@reference "tailwindcss";
+
+.container {
+  @apply max-w-6xl mx-auto px-6 py-10;
+}
+
+.heading {
+  @apply text-3xl font-bold text-gray-800 mb-8;
+}
+
+.status {
+  @apply text-center text-gray-500 py-16;
+}
+
+.grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.card {
+  @apply flex flex-col bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow;
+}
+
+.imageWrapper {
+  @apply aspect-video bg-blue-50 flex items-center justify-center overflow-hidden;
+}
+
+.image {
+  @apply w-full h-full object-cover;
+}
+
+.noImage {
+  @apply text-4xl font-bold text-blue-300;
+}
+
+.cardInfo {
+  @apply flex flex-col gap-1 p-6;
+}
+
+.shopName {
+  @apply text-lg font-semibold text-gray-800 mb-2;
+}
+
+.shopDescription {
+  @apply text-sm text-gray-600 mb-2 line-clamp-2;
+}
+
+.shopAddress {
+  @apply text-xs text-gray-400;
+}

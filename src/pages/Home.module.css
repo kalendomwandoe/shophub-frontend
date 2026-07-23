@@ -1,0 +1,113 @@
+@reference "tailwindcss";
+
+.hero {
+  @apply flex flex-col items-center justify-center text-center px-6 py-20 bg-blue-600 text-white;
+}
+
+.heroTitle {
+  @apply text-4xl font-bold mb-3;
+}
+
+.heroSubtitle {
+  @apply text-blue-100 mb-8;
+}
+
+.searchForm {
+  @apply flex w-full max-w-md gap-2;
+}
+
+.searchInput {
+  @apply flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300;
+}
+
+.searchBtn {
+  @apply bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors;
+}
+
+.section {
+  @apply max-w-6xl mx-auto px-6 py-12;
+}
+
+.sectionHeader {
+  @apply flex items-center justify-between mb-6;
+}
+
+.sectionTitle {
+  @apply text-2xl font-bold text-gray-800;
+}
+
+.viewAllLink {
+  @apply text-sm text-blue-600 hover:underline;
+}
+
+.emptyText {
+  @apply text-gray-500;
+}
+
+.shopsGrid {
+  @apply grid grid-cols-1 sm:grid-cols-3 gap-6;
+}
+
+.shopCard {
+  @apply flex flex-col bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow;
+}
+
+.shopImageWrapper {
+  @apply aspect-video bg-blue-50 flex items-center justify-center overflow-hidden;
+}
+
+.shopImage {
+  @apply w-full h-full object-cover;
+}
+
+.noShopImage {
+  @apply text-4xl font-bold text-blue-300;
+}
+
+.shopInfo {
+  @apply flex flex-col gap-1 p-6;
+}
+
+.shopName {
+  @apply text-lg font-semibold text-gray-800 mb-2;
+}
+
+.shopDescription {
+  @apply text-sm text-gray-600 line-clamp-2;
+}
+
+.productsGrid {
+  @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4;
+}
+
+.productCard {
+  @apply flex flex-col bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow;
+}
+
+.productImagePlaceholder {
+  @apply aspect-square bg-gray-100 flex items-center justify-center;
+}
+
+.productImage {
+  @apply w-full h-full object-cover;
+}
+
+.noImage {
+  @apply text-xs text-gray-400;
+}
+
+.productInfo {
+  @apply flex flex-col gap-1 p-3;
+}
+
+.productName {
+  @apply text-sm font-medium text-gray-800 truncate;
+}
+
+.productPrice {
+  @apply text-sm text-blue-600 font-semibold;
+}
+
+.footer {
+  @apply text-center text-sm text-gray-400 py-10 border-t border-gray-100;
+}

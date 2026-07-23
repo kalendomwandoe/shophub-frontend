@@ -1,0 +1,81 @@
+@reference "tailwindcss";
+
+.container {
+  @apply max-w-4xl mx-auto px-6 py-10 bg-gray-50;
+}
+
+.header {
+  @apply mb-8 pb-8 border-b border-gray-200;
+}
+
+.name {
+  @apply text-3xl font-bold text-gray-800 mb-2;
+}
+
+.description {
+  @apply text-gray-600;
+}
+
+.infoGrid {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10;
+}
+
+.infoItem {
+  @apply flex flex-col gap-1;
+}
+
+.infoLabel {
+  @apply text-xs uppercase tracking-wide text-gray-400 font-medium;
+}
+
+.productsHeading {
+  @apply text-xl font-semibold text-gray-800 mb-4;
+}
+
+.status {
+  @apply text-center text-gray-500 py-10;
+}
+
+.backLink {
+  @apply inline-block mt-8 text-blue-600 hover:underline;
+}
+
+.productsGrid {
+  @apply grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8;
+}
+
+.productCard {
+  @apply flex flex-col bg-white rounded-lg shadow-lg overflow-hidden border-2 border-gray-400;
+}
+
+.productImagePlaceholder {
+  @apply aspect-square bg-gray-100 flex items-center justify-center;
+}
+
+.productImage {
+  @apply w-full h-full object-cover;
+}
+
+.noImage {
+  @apply text-xs text-gray-400;
+}
+
+.productInfo {
+  @apply flex flex-col gap-1 p-3;
+}
+
+.productName {
+  @apply text-sm font-medium text-gray-800 truncate;
+}
+
+.productPrice {
+  @apply text-sm text-blue-600 font-semibold;
+}
+
+.coverImage {
+  @apply w-full aspect-[3/1] object-cover rounded-xl mb-6;
+}
+
+.logo {
+  @apply w-16 h-16 rounded-full object-cover mb-3 border border-gray-200;
+}

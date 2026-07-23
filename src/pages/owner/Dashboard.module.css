@@ -1,0 +1,69 @@
+@reference "tailwindcss";
+
+.container {
+  @apply max-w-4xl mx-auto px-6 py-10;
+}
+
+.heading {
+  @apply text-2xl font-bold text-gray-800 mb-4;
+}
+
+.status {
+  @apply text-center text-gray-500 py-16;
+}
+
+.shopBanner {
+  @apply flex items-center gap-3 text-sm text-gray-600 mb-8;
+}
+
+.pendingBadge {
+  @apply text-xs font-medium text-amber-700 bg-amber-100 px-2 py-1 rounded-full;
+}
+
+.statsGrid {
+  @apply grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10;
+}
+
+.statCard {
+  @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+}
+
+.statLabel {
+  @apply text-sm text-gray-500 mb-1;
+}
+
+.statValue {
+  @apply text-3xl font-bold text-gray-800;
+}
+
+.recentSection {
+  @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+}
+
+.recentHeader {
+  @apply flex items-center justify-between mb-4;
+}
+
+.recentHeading {
+  @apply text-lg font-semibold text-gray-800;
+}
+
+.viewAllLink {
+  @apply text-sm text-blue-600 hover:underline;
+}
+
+.recentList {
+  @apply flex flex-col divide-y divide-gray-100;
+}
+
+.recentItem {
+  @apply flex items-center justify-between py-3 hover:text-blue-600 transition-colors;
+}
+
+.recentName {
+  @apply text-gray-700 font-medium;
+}
+
+.recentPrice {
+  @apply text-gray-500 text-sm;
+}

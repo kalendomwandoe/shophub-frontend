@@ -1,0 +1,32 @@
+@reference "tailwindcss";
+
+.nav {
+  @apply flex items-center justify-between px-6 py-4 bg-white shadow-sm;
+}
+
+.brand {
+  @apply text-xl font-bold text-blue-600;
+}
+
+.links {
+  @apply flex items-center gap-6;
+}
+
+.link {
+  @apply text-gray-700 hover:text-blue-600 transition-colors;
+}
+
+.userName {
+  @apply text-gray-600 text-sm;
+}
+
+.logoutBtn {
+  @apply text-red-600 hover:text-red-700 font-medium;
+}
+
+.registerBtn {
+  @apply bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors;
+}
+.linkActive {
+  @apply text-blue-600 font-semibold;
+}
