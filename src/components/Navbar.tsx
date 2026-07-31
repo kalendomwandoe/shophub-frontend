@@ -48,6 +48,23 @@ function Navbar() {
     </NavLink>
   </>
 )}
+
+{user?.role === "ADMIN" && (
+  <>
+    <NavLink to="/admin" end className={navClass}>
+      Admin
+    </NavLink>
+    <NavLink to="/admin/boutiques" className={navClass}>
+      Boutiques
+    </NavLink>
+    <NavLink to="/admin/products" className={navClass}>
+  Products
+</NavLink>
+ <NavLink to="/admin/users" className={navClass}>
+  Users
+</NavLink>
+  </>
+)}
             <span className={styles.userName}>Hello, {user?.name}</span>
             <button onClick={handleLogout} className={styles.logoutBtn}>
               Logout

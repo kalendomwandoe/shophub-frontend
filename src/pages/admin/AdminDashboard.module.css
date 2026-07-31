@@ -1,0 +1,33 @@
+@reference "tailwindcss";
+
+.container {
+  @apply max-w-4xl mx-auto px-6 py-10;
+}
+
+.heading {
+  @apply text-2xl font-bold text-gray-800 mb-6;
+}
+
+.status {
+  @apply text-center text-gray-500 py-16;
+}
+
+.statsGrid {
+  @apply grid grid-cols-2 lg:grid-cols-4 gap-4;
+}
+
+.statCard {
+  @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+}
+
+.statCardLink {
+  @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:border-blue-300 hover:shadow-md transition-all;
+}
+
+.statLabel {
+  @apply text-sm text-gray-500 mb-1;
+}
+
+.statValue {
+  @apply text-3xl font-bold text-gray-800;
+}

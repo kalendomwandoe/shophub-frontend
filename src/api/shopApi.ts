@@ -36,6 +36,35 @@ export const shopApi = baseApi.injectEndpoints({
       }),
       invalidatesTags: ["Shop"],
     }),
+    getAllShopsForAdmin: builder.query<{ shops: Shop[] }, void>({
+  query: () => "/shops/admin/all",
+  providesTags: ["Shop"],
+}),
+
+approveShop: builder.mutation<{ shop: Shop }, string>({
+  query: (id) => ({
+    url: `/shops/${id}/approve`,
+    method: "PATCH",
+  }),
+  invalidatesTags: ["Shop"],
+}),
+
+suspendShop: builder.mutation<{ shop: Shop }, string>({
+  query: (id) => ({
+    url: `/shops/${id}/suspend`,
+    method: "PATCH",
+  }),
+  invalidatesTags: ["Shop"],
+}),
+
+unsuspendShop: builder.mutation<{ shop: Shop }, string>({
+  query: (id) => ({
+    url: `/shops/${id}/unsuspend`,
+    method: "PATCH",
+  }),
+  invalidatesTags: ["Shop"],
+}),
+
   }),
 });
 
@@ -45,4 +74,8 @@ export const {
   useGetMyShopQuery,
   useCreateShopMutation,
   useUpdateMyShopMutation,
+  useGetAllShopsForAdminQuery,
+  useApproveShopMutation,
+  useSuspendShopMutation,
+  useUnsuspendShopMutation,
 } = shopApi;

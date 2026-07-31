@@ -5,6 +5,7 @@ import type { Category } from "../types/models.types";
 
 export const productApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
+
     getAllProducts: builder.query<{ products: Product[] }, Category | void>({
   query: (category) => (category ? `/products?category=${category}` : "/products"),
   providesTags: ["Product"],
@@ -45,6 +46,20 @@ export const productApi = baseApi.injectEndpoints({
       }),
       invalidatesTags: ["Product"],
     }),
+
+    getAllProductsForAdmin: builder.query<{ products: Product[] }, void>({
+  query: () => "/products/admin/all",
+  providesTags: ["Product"],
+}),
+
+deleteProductAsAdmin: builder.mutation<void, string>({
+  query: (id) => ({
+    url: `/products/${id}/admin`,
+    method: "DELETE",
+  }),
+  invalidatesTags: ["Product"],
+}),
+
   }),
 });
 
@@ -55,4 +70,6 @@ export const {
   useCreateProductMutation,
   useUpdateProductMutation,
   useDeleteProductMutation,
+  useGetAllProductsForAdminQuery,
+  useDeleteProductAsAdminMutation,
 } = productApi;

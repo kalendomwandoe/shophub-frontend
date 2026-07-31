@@ -15,6 +15,10 @@ import AddProduct from "./pages/owner/AddProduct.tsx";
 import EditProduct from "./pages/owner/EditProduct.tsx";
 import Categories from "./pages/Categories.tsx";
 import CategoryProducts from "./pages/CategoryProducts";
+import ManageBoutiques from "./pages/admin/ManageBoutiques.tsx";
+import AdminDashboard from "./pages/admin/AdminDashboard.tsx";
+import ManageProducts from "./pages/admin/ManageProducts";
+import ManageUsers from "./pages/admin/ManageUsers.tsx";
 
 const router = createBrowserRouter([
   {
@@ -69,7 +73,41 @@ const router = createBrowserRouter([
   ),
 },
 { path: "categories", element: <Categories /> },
-{ path: "categories/:category", element: <CategoryProducts /> }
+{ path: "categories/:category", element: <CategoryProducts /> },
+{
+  path: "admin",
+  element: (
+    <ProtectedRoute allowedRoles={["ADMIN"]}>
+      <AdminDashboard />
+    </ProtectedRoute>
+  ),
+},
+{
+  path: "admin/boutiques",
+  element: (
+    <ProtectedRoute allowedRoles={["ADMIN"]}>
+      <ManageBoutiques />
+    </ProtectedRoute>
+  ),
+},
+
+{
+  path: "admin/products",
+  element: (
+    <ProtectedRoute allowedRoles={["ADMIN"]}>
+      <ManageProducts />
+    </ProtectedRoute>
+  ),
+},
+
+{
+  path: "admin/users",
+  element: (
+    <ProtectedRoute allowedRoles={["ADMIN"]}>
+      <ManageUsers />
+    </ProtectedRoute>
+  ),
+},
 
     ],
   },

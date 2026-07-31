@@ -1,0 +1,65 @@
+@reference "tailwindcss";
+
+.container {
+  @apply max-w-5xl mx-auto px-6 py-10;
+}
+
+.heading {
+  @apply text-2xl font-bold text-gray-800;
+}
+
+.subheading {
+  @apply text-gray-500 text-sm mt-1 mb-6;
+}
+
+.status {
+  @apply text-center text-gray-500 py-16;
+}
+
+.tableWrapper {
+  @apply bg-white rounded-xl shadow-sm border border-gray-200 overflow-x-auto;
+}
+
+.table {
+  @apply w-full text-sm;
+}
+
+.th {
+  @apply text-left px-4 py-3 font-medium text-gray-500 border-b border-gray-200;
+}
+
+.tr {
+  @apply border-b border-gray-100 last:border-0;
+}
+
+.td {
+  @apply px-4 py-3 text-gray-700;
+}
+
+.muted {
+  @apply text-gray-300;
+}
+
+.youTag {
+  @apply ml-2 text-xs text-gray-400;
+}
+
+.roleBadge {
+  @apply text-xs font-medium text-gray-600 bg-gray-100 px-2 py-1 rounded-full;
+}
+
+.activeBadge {
+  @apply text-xs font-medium text-green-700 bg-green-100 px-2 py-1 rounded-full;
+}
+
+.suspendedBadge {
+  @apply text-xs font-medium text-red-700 bg-red-100 px-2 py-1 rounded-full;
+}
+
+.suspendBtn {
+  @apply text-red-600 hover:underline disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.unsuspendBtn {
+  @apply text-blue-600 hover:underline disabled:opacity-50 disabled:cursor-not-allowed;
+}

@@ -12,6 +12,7 @@ export interface User {
   name: string;
   email: string;
   role: UserRole;
+  isSuspended: boolean;
   createdAt: string;
   updatedAt: string;
 }
@@ -32,6 +33,11 @@ export interface Shop {
   createdAt: string;
   updatedAt: string;
   products?: Product[];
+  owner?: {
+    id: string;
+    name: string;
+    email: string;
+  };
 }
 
 
